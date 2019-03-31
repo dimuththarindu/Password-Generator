@@ -1,53 +1,57 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
-   <head>
-      <title>Random Unicode Password Generator</title>
-      <meta charset="utf-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1">
-      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-	  <link rel="stylesheet" type="text/css" href="css/style.css">
-      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-   </head>
-   <body>
-   
-      <div class="jumbotron text-center">
-         <h1 class="display-4 font-weight-bold" >Random Unicode Password Generator</h1>
-         <p>Use this website to create a secure, random password.</p>
-      </div>
-	  
-      <div class="container" align="center" >
-         <div class="form-group">
-            <label>Password Length</label>
-            <input type="text" class="form-control" id="pwLength" value="32" style="text-align:center;"/>
-         </div>
-         <div class="form-group">
-            <button type="button" class="btn btn-dark" onclick="generatePassword()">Generate</button>
-			<button type="button" class="btn btn-dark" onclick="copyPassword('#password')">Copy to clipboard</button>
-         </div>
-         <div class="panel panel-default">
-            <div class="panel-body">
-               <p class="text-secondary small" id="lengthPassword">Password length will appear here.</p>
-               <p class="text-center text-success text-monospace" id="password">Your password will appear here.</p>
-            </div>
-         </div>
-      </div>
-	  
-      <footer class="page-footer font-small blue pt-4">
-         <!-- Copyright -->
-         <div class="footer-copyright text-center text-secondary small">
-            <p>
-               Generated passwords will not be stored. </br>
-               &copy; <script>document.write(new Date().getFullYear())</script> Copyright: DimuthTharindu.github.io </br>
-               See the code on <a href="https://github.com/dimuththarindu/Web-Password-Generator"> Github.</a>
-            </p>
-         </div>
-         <!-- Copyright -->
-      </footer>
-	  
-      <script type="text/javascript" charset="utf-8" src="js/passwordGenerator.js"></script>
-	  <script type="text/javascript" src="js/copy2Clipboard.js"></script>
-   </body>
-</html>
 
+<head>
+    <title>Random Unicode Password Generator</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+
+    <div class="jumbotron text-center">
+        <h1 class="display-4 font-weight-bold">Random Unicode Password Generator</h1>
+        <p>Use this website to create a secure, random password.</p>
+    </div>
+
+    <div class="container" align="center">
+        <div class="form-group">
+            <label>Password Length</label>
+            <input type="text" class="form-control" id="pwLength" value="32" style="text-align:center;" />
+        </div>
+        <div class="form-group">
+            <button type="button" class="btn btn-dark" onclick="generatePassword()">Generate</button>
+            <button type="button" class="btn btn-dark" onclick="copyPassword('#password')">Copy to clipboard</button>
+        </div>
+        <div class="panel panel-default">
+            <div class="panel-body">
+                <p class="text-secondary small" id="lengthPassword">Password length will appear here.</p>
+                <p class="text-center text-success text-monospace" id="password">Your password will appear here.</p>
+            </div>
+        </div>
+    </div>
+
+    <footer class="page-footer font-small blue pt-4">
+        <!-- Copyright -->
+        <div class="footer-copyright text-center text-secondary small">
+            <p>
+                Generated passwords will not be stored. </br>
+                &copy; <script>
+                    document.write(new Date().getFullYear())
+                </script> Copyright: DimuthTharindu.github.io </br>
+                See the code on <a href="https://github.com/dimuththarindu/Web-Password-Generator"> Github.</a>
+            </p>
+        </div>
+        <!-- Copyright -->
+    </footer>
+
+    <script type="text/javascript" charset="utf-8" src="js/passwordGenerator.js"></script>
+    <script type="text/javascript" src="js/copy2Clipboard.js"></script>
+</body>
+
+</html>
