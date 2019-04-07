@@ -1,4 +1,5 @@
 ﻿window.onload = function() {
+	document.getElementById("pwLength").value = getRandomNo(20,150);
     generatePassword();
 };
 
@@ -33,4 +34,8 @@ function getSafeString() {
         str += setSafe.charAt(randomNumber);
     }
     return str;
+}
+
+function getRandomNo(min,max) {
+    return Math.floor(Math.random()*(max-min+1)+min);
 }
