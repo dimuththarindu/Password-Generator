@@ -1,5 +1,5 @@
 ﻿window.onload = function() {
-	document.getElementById("pwLength").value = getRandomNo(20,60);
+	document.getElementById("pwLength").value = getRandomNo(20,50);
     generatePassword();
 };
 
