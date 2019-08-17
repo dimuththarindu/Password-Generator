@@ -1,4 +1,4 @@
-# Password-Generator
+# Online Password Generator
 This webpage will create random, strong passwords locally using English and non-keyboard characters. 
 They will be extremely hard to crack and impossible to guess. Generated passwords will not be stored in anywhere. 
 Therefore, you'll have to use a password manager to store these passwords. 
